@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.yi.yidemo.MainActivity" >
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_plate_type"
+        android:text="沪"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/tv_plate_type"
+        android:id="@+id/btn_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pop" />
+
+   <!--  <Button
+        android:id="@+id/btn_mv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:text="btn_mv" />
+ -->
+    <!-- <yi.yidemo.com.view.TestLinearLayoutClick
+        android:id="@+id/layout_bottom_test"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btn_pop" /> -->
+
+    <yi.yidemo.com.view.BottomPopLinearLayout
+        android:id="@+id/layout_bottom_pop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
